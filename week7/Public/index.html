@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/env.js"></script>
+
+
+
+    <style>
+        .custom-icon {
+            color: #006400;
+        }
+
+        .nav-wrapper {
+            background-color: #006400;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Tech News</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#latest-news">Latest News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="latest-news">
+        <h3>Latest Tech News</h3>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger custom-icon"
+                            href="#modal1">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tech News 1</span>
+                        <p>Nvidia Reveals ‘Swiss Army Knife’ of AI Audio Tools: Fugatto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger custom-icon"
+                            href="#modal2">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tech News 2</span>
+                        <p>Qualcomm’s ‘AI-First’ Vision for the Future of Smart Devices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger custom-icon"
+                            href="#modal3">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tech News 3</span>
+                        <p>Can Hydrogen-Powered Cars Leave EVs in the Rearview?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger custom-icon"
+                            href="#modal4">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tech News 4</span>
+                        <p>Apple Addresses Apple Intelligence: What Microsoft Missed With Copilot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Nvidia Reveals ‘Swiss Army Knife’ of AI Audio Tools: Fugatto</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Qualcomm’s ‘AI-First’ Vision for the Future of Smart Devices</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Can Hydrogen-Powered Cars Leave EVs in the Rearview?</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <h4>Apple Addresses Apple Intelligence: What Microsoft Missed With Copilot</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+        });
+    </script>
+
+</body>
+
+</html>
